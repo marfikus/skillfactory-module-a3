@@ -6,7 +6,8 @@ body {
 .menu-wrapper {
 	position: relative;
 	margin: 0 auto;
-	max-width: 1249px;
+	/*max-width: 1249px;*/
+	width: 90%;
 	min-width: 470px;
 	height: 89px;
 	top: 29px;
@@ -17,14 +18,12 @@ body {
 
 .site-menu {
 	position: relative;
+	display: inline-block;
 	margin: 0;
 	padding: 0;
-	display: inline-block;
 	height: inherit;
 	list-style: none;
 	text-align: center;
-	/*left: 35%;*/
-	
 }
 
 .site-menu li {
@@ -42,62 +41,68 @@ body {
 	position: relative;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #E0E0E0;
-	height: inherit;
-	top: 40%;
 	/*margin: 0 15px;*/
 	padding: 36px 20px;
+	height: inherit;
+	top: 40%;
+	color: #E0E0E0;
 }
 
 .content-wrapper {
 	position: relative;
 	/*display: inline-block;*/
 	margin: 0 auto;
-	max-width: 1249px;
-	min-width: 430px;
-	/*height: 89px;*/
+	padding: 0;
+	/*max-width: 1249px;*/
+	width: 90%;
+	min-width: 470px;
 	top: 102px;
-	/*background-color: #000000;*/
-	/*opacity: 0.8;*/
-	/*text-align: center;	*/
 }
 
-.content-wrapper h1 {
+.left-block {
+	position: relative;
+	display: inline-block;
 	margin: 0;
-	width: 618px;
-	/*height: 117px;*/
+	padding: 0;
+	width: 49%; 
+	min-width: 545px;
+	height: 370px;
+	vertical-align: top;
+}
+
+.left-block h1 {
+	margin: 0;
+	/*width: 618px;*/
+	width: 100%;
 	font-style: normal;
 	font-weight: 800;
 	font-size: 60px;
 	line-height: 72px;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
-	/*display: flex;*/
 	align-items: center;
 	color: #000000;
 }
 
-.content-wrapper p {
+.left-block p {
 	position: relative;
 	margin: 0;
-	width: 545px;
-	/*height: 117px;*/
+	padding: 0;
+	/*width: 545px;*/
+	width: 100%;
 	top: 20px;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 28px;
-	/*text-transform: uppercase;*/
-	/*letter-spacing: 1.5px;*/
-	/*display: flex;*/
 	align-items: center;
 	color: #000000;
 }
 
 .button-link {
 	position: relative;
-	top: 70px;
 	padding: 19px 60px;
+	top: 70px;
 	text-decoration: none;
 	background-color: #FF2D2D;
 	color: #FFFFFF;
@@ -110,13 +115,26 @@ body {
 	border-radius: 5px;
 }
 
+.right-block {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 50%; 
+	min-width: 551px;
+	height: 370px;	
+	left: 7px;
+	vertical-align: top;
+	text-align: right;
+}
+
 .image-link {
-	position: absolute;
+	position: relative;
 	/*display: inline-block;*/
-	top: 0;
-	right: 0;
 	width: 551px;
 	height: 356px;
+	top: 0;
+	right: 0;
 	/*background-color: gray;*/
 }
 
