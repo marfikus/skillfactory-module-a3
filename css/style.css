@@ -257,7 +257,7 @@ header {
 
 .stage-2-left-block p {
 	/*position: relative;*/
-	/*margin: 19px 0 55px 0;*/
+	margin: 32px 0 82px 0;
 
 	color: #000000;
 	font-family: 'OpenSans-Regular', sans-serif;
@@ -303,6 +303,9 @@ header {
 
 	/*position: relative;*/
 	/*top: -15px;*/
+
+	display: flex;
+	align-items: flex-start;
 }
 
 
