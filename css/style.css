@@ -13,6 +13,11 @@
 	src: url('../fonts/Open_Sans/OpenSans-ExtraBold.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'OpenSans-SemiBold';
+	src: url('../fonts/Open_Sans/OpenSans-SemiBold.ttf') format('truetype');
+}
+
 /*===================================================*/
 
 body {
@@ -223,22 +228,20 @@ header {
 	display: flex;
 	/*justify-content: space-between;*/
 	/*flex-wrap: wrap;*/
-	/*align-items: flex-start;*/	
-
-	position: relative;
-	top: -10px;
+	/*align-items: flex-start;*/
 }
 
 .stage-2-left-block {
 	/*margin: 0;*/
-	/*padding-right: 50px;*/
+	padding-right: 39px;
+	margin-bottom: 30px;
 
 	width: 50%;
 	/*min-width: 300px;*/
 	/*min-height: 370px;*/
 
-	/*position: relative;*/
-	/*top: -15px;*/
+	position: relative;
+	top: -10px;
 }
 
 .stage-2-left-block h2 {
@@ -306,14 +309,54 @@ header {
 
 	display: flex;
 	align-items: flex-start;
+	flex-wrap: wrap;
 }
+
+.stage-2-right-block .item {
+	/*width: 50%;*/
+	flex: 1 1 290px;
+	margin-bottom: 49px;
+}
+
+.stage-2-right-block .item:nth-child(odd) {
+	margin-right: 15px;
+}
+
+.stage-2-right-block .item h3 {	
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+	/*text-transform: uppercase;*/
+	color: #000000;
+	font-family: 'OpenSans-SemiBold', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24.0692px;
+	line-height: 0px;
+	letter-spacing: 0.271838px;	
+}
+
+.stage-2-right-block .item p {
+	margin: 0;
+
+	/*text-transform: uppercase;*/
+	color: #000000;
+	font-family: 'OpenSans-Regular', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;	
+	/*letter-spacing: 0.271838px;	*/
+}
+
 
 
 
 /*===================================================*/
 
 @media screen and (max-width: 1130px) {
-	.stage-1-base {
+	.stage-1-base, 
+	.stage-2-base {
 		padding-left: 1vw;
 		padding-right: 1vw;
 	}
@@ -321,14 +364,20 @@ header {
 	.stage-1-left-block h1 {
 		font-size: 5vw;
 	}
+
+	.stage-2-left-block h2 {
+		font-size: 4vw;
+	}	
 }
 
 @media screen and (max-width: 670px) {
-	.stage-1-base {
+	.stage-1-base,
+	.stage-2-base {
 		flex-wrap: wrap;
 	}
 
-	.stage-1-left-block {
+	.stage-1-left-block,
+	.stage-2-left-block {
 		width: 100%;
 		padding-right: 0;
 	}
@@ -337,8 +386,13 @@ header {
 		font-size: 8vw;
 	}
 
-	.image-link {
+	.image-link,
+	.stage-2-right-block {
 		width: 100%;
+	}
+
+	.stage-2-left-block h2 {
+		font-size: 7vw;
 	}
 }
 
