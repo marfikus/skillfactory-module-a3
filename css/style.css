@@ -207,6 +207,10 @@ header {
 		padding-left: 1vw;
 		padding-right: 1vw;
 	}
+
+	.stage-1-left-block h1 {
+		font-size: 5vw;
+	}
 }
 
 @media screen and (max-width: 670px) {
@@ -217,6 +221,10 @@ header {
 	.stage-1-left-block {
 		width: 100%;
 		padding-right: 0;
+	}
+
+	.stage-1-left-block h1 {
+		font-size: 8vw;
 	}
 
 	.image-link {
