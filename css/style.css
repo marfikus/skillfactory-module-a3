@@ -221,6 +221,7 @@ header {
 	/*Если выравнивание флексом:*/
 	width: 1249px;
 	margin-top: 107px;
+	margin-bottom: 59px;
 	
 	/*min-height: 370px;*/
 
@@ -251,9 +252,9 @@ header {
 	font-family: 'OpenSans-Bold', sans-serif;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 42.1902px;
+	font-size: 42px;
 	line-height: 55px;
-	letter-spacing: 0.422159px;
+	letter-spacing: 0.42px;
 	word-break: break-word;
 }
 
@@ -348,12 +349,104 @@ header {
 	/*letter-spacing: 0.271838px;	*/
 }
 
-hr {
+.hr-after-stage-2 {
 	margin: 0 auto;
 	max-width: 1251px;
-	height: 5px;
+	height: 2px;
 	background-color: #ECECEC;
 }
+
+.stage-3 {
+	min-height: 930px;
+
+	margin-top: 92px;
+
+	/*Выравнивание флексом:*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.stage-3-heading {
+	width: 1249px;
+
+	/*Выравнивание флексом:*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	text-align: center;
+}
+
+.stage-3-heading h2 {
+	margin: 0;
+
+	text-transform: uppercase;
+	color: #000000;
+	font-family: 'OpenSans-Bold', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 55px;
+	letter-spacing: 0.38px;
+	word-break: break-word;
+}
+
+.stage-3-heading p {
+	max-width: 537px;
+
+	color: #000000;
+	font-family: 'OpenSans-Regular', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.stage-3-heading hr {
+	width: 134px;
+	height: 2px;
+	background-color: #FF2D2D;
+}
+
+.stage-3-menu {
+	width: 1249px;
+	margin-top: 79px;
+
+	/*Выравнивание флексом:*/
+	display: flex;
+	justify-content: center;
+}
+
+.stage-3-menu a {
+	text-decoration: none;
+	/*padding: 33px 20px 32px 20px;*/
+	margin: 0 20px;
+
+	text-transform: uppercase;
+	color: #000000;
+	font-family: 'OpenSans-SemiBold', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 24px;
+	letter-spacing: 0.22px;		
+}
+
+.stage-3-menu a:hover {
+	color: #FF2D2D;
+}
+
+.stage-3-menu a:nth-child(1) {
+	color: #FF2D2D;	
+}
+
+.stage-3-content {
+	width: 1249px;
+
+	margin-top: 60px;
+}
+
 
 
 /*===================================================*/
