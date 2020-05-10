@@ -394,5 +394,9 @@ header {
 	.stage-2-left-block h2 {
 		font-size: 7vw;
 	}
+
+	.stage-2-right-block .item {
+		flex: 1 1 220px;
+	}	
 }
 
