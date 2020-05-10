@@ -204,8 +204,7 @@ header {
 /*===================================================*/
 
 .stage-2 {
-	/*min-height: 570px;*/
-	/*min-width: 300px;*/
+	min-height: 589px;
 
 	/*Выравнивание флексом:*/
 	display: flex;
@@ -349,7 +348,12 @@ header {
 	/*letter-spacing: 0.271838px;	*/
 }
 
-
+hr {
+	margin: 0 auto;
+	max-width: 1251px;
+	height: 5px;
+	background-color: #ECECEC;
+}
 
 
 /*===================================================*/
