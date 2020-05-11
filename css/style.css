@@ -204,8 +204,7 @@ header {
 /*===================================================*/
 
 .stage-2 {
-	/*min-height: 570px;*/
-	/*min-width: 300px;*/
+	min-height: 589px;
 
 	/*Выравнивание флексом:*/
 	display: flex;
@@ -222,6 +221,7 @@ header {
 	/*Если выравнивание флексом:*/
 	width: 1249px;
 	margin-top: 107px;
+	margin-bottom: 59px;
 	
 	/*min-height: 370px;*/
 
@@ -252,9 +252,9 @@ header {
 	font-family: 'OpenSans-Bold', sans-serif;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 42.1902px;
+	font-size: 42px;
 	line-height: 55px;
-	letter-spacing: 0.422159px;
+	letter-spacing: 0.42px;
 	word-break: break-word;
 }
 
@@ -349,14 +349,174 @@ header {
 	/*letter-spacing: 0.271838px;	*/
 }
 
+/*.hr-wrapper {
+	display: flex;
+	justify-content: center;
+}*/
 
+.hr-after-stage-2 {
+	/*можно и его флексом центровать, но тогда обёртку ему делать.. проще так*/
+	margin: 0 auto;
+	max-width: 1249px;
+	height: 2px;
+	
+	/*position: relative;*/
+	/*top: 107px;*/
+
+	/*margin: 0 0 92px 0;*/
+	/*margin-bottom: 92px;*/
+
+	background-color: #ECECEC;
+	/*text-align: center;*/
+
+	/*flex-basis: 1249px;*/
+}
+
+.stage-3 {
+	min-height: 930px;
+
+	/*Выравнивание флексом:*/
+	display: flex;
+	justify-content: center;
+
+	/*width: 1249px;*/
+
+	/*margin-top: 92px;*/
+
+	/*Выравнивание флексом:*/
+/*	display: flex;
+	flex-direction: column;
+	align-items: center;*/
+}
+
+.stage-3-base {
+	/*Если выравнивание без флекса:*/
+	/*margin: 0 auto;*/
+	/*max-width: 1249px;*/
+	/*position: relative;*/
+	/*top: 107px;*/
+
+	/*Если выравнивание флексом:*/
+	width: 1249px;
+	margin-top: 92px;
+	/*margin-bottom: 59px;*/
+
+	/*Выравнивание флексом:*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.stage-3-heading {
+	max-width: 1249px;
+
+	/*Выравнивание флексом:*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	text-align: center;
+}
+
+.stage-3-heading h2 {
+	margin: 0;
+
+	text-transform: uppercase;
+	color: #000000;
+	font-family: 'OpenSans-Bold', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 55px;
+	letter-spacing: 0.38px;
+	word-break: break-word;
+}
+
+.stage-3-heading p {
+	max-width: 537px;
+
+	color: #000000;
+	font-family: 'OpenSans-Regular', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+
+	text-align: center;
+}
+
+.stage-3-heading hr {
+	width: 134px;
+	height: 2px;
+	background-color: #FF2D2D;
+}
+
+.stage-3-menu {
+	max-width: 1249px;
+	margin-top: 74px;
+
+	/*Выравнивание флексом:*/
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.stage-3-menu a {
+	text-decoration: none;
+	/*padding: 33px 20px 32px 20px;*/
+	margin: 5px 20px;
+
+	text-transform: uppercase;
+	color: #000000;
+	font-family: 'OpenSans-SemiBold', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 24px;
+	letter-spacing: 0.22px;		
+}
+
+.stage-3-menu a:hover {
+	color: #FF2D2D;
+}
+
+.stage-3-menu a:nth-child(1) {
+	color: #FF2D2D;	
+}
+
+.stage-3-content {
+	max-width: 1249px;
+	/*width: 100%;*/
+
+	margin-top: 54px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	/*align-content: space-between;*/
+}
+
+.stage-3-content img {
+	/*min-width: 200px;*/
+	/*height: 293px;*/
+	/*min-height: auto;*/
+
+	/*margin-right: 10px;*/
+	margin-bottom: 15px;
+	/*flex: 1 1 300px;*/
+	/*flex: 1 1 24%;*/
+	/*width: 24%;*/
+	object-fit: cover;
+}
 
 
 /*===================================================*/
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1270px) {
 	.stage-1-base, 
-	.stage-2-base {
+	.stage-2-base,
+	.stage-3-base {
 		padding-left: 1vw;
 		padding-right: 1vw;
 	}
@@ -365,9 +525,21 @@ header {
 		font-size: 5vw;
 	}
 
-	.stage-2-left-block h2 {
+	.stage-2-left-block h2,
+	.stage-3-heading h2 {
 		font-size: 4vw;
-	}	
+	}
+
+	.stage-3-content {
+		/* для компенсации margin-right у img */
+		margin-left: 10px; 
+	}
+
+	.stage-3-content img {
+		flex: 1 1 300px;
+		/*flex: 1 1 24%;*/
+		margin-right: 10px;
+	}
 }
 
 @media screen and (max-width: 670px) {
@@ -391,8 +563,21 @@ header {
 		width: 100%;
 	}
 
-	.stage-2-left-block h2 {
+	.stage-2-left-block h2,
+	.stage-3-heading h2 {
 		font-size: 7vw;
 	}
+
+	.stage-2-right-block .item {
+		flex: 1 1 220px;
+	}
+
+	.stage-3-content {
+		margin-left: 0; 
+	}
+
+	.stage-3-content img {
+		width: 100%;
+	}	
 }
 
