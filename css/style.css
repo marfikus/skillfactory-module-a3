@@ -349,17 +349,57 @@ header {
 	/*letter-spacing: 0.271838px;	*/
 }
 
+/*.hr-wrapper {
+	display: flex;
+	justify-content: center;
+}*/
+
 .hr-after-stage-2 {
+	/*можно и его флексом центровать, но тогда обёртку ему делать.. проще так*/
 	margin: 0 auto;
-	max-width: 1251px;
+	max-width: 1249px;
 	height: 2px;
+	
+	/*position: relative;*/
+	/*top: 107px;*/
+
+	/*margin: 0 0 92px 0;*/
+	/*margin-bottom: 92px;*/
+
 	background-color: #ECECEC;
+	/*text-align: center;*/
+
+	/*flex-basis: 1249px;*/
 }
 
 .stage-3 {
 	min-height: 930px;
 
+	/*Выравнивание флексом:*/
+	display: flex;
+	justify-content: center;
+
+	/*width: 1249px;*/
+
+	/*margin-top: 92px;*/
+
+	/*Выравнивание флексом:*/
+/*	display: flex;
+	flex-direction: column;
+	align-items: center;*/
+}
+
+.stage-3-base {
+	/*Если выравнивание без флекса:*/
+	/*margin: 0 auto;*/
+	/*max-width: 1249px;*/
+	/*position: relative;*/
+	/*top: 107px;*/
+
+	/*Если выравнивание флексом:*/
+	width: 1249px;
 	margin-top: 92px;
+	/*margin-bottom: 59px;*/
 
 	/*Выравнивание флексом:*/
 	display: flex;
@@ -368,7 +408,7 @@ header {
 }
 
 .stage-3-heading {
-	width: 1249px;
+	max-width: 1249px;
 
 	/*Выравнивание флексом:*/
 	display: flex;
@@ -401,6 +441,8 @@ header {
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 28px;
+
+	text-align: center;
 }
 
 .stage-3-heading hr {
@@ -410,18 +452,19 @@ header {
 }
 
 .stage-3-menu {
-	width: 1249px;
-	margin-top: 79px;
+	max-width: 1249px;
+	margin-top: 74px;
 
 	/*Выравнивание флексом:*/
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .stage-3-menu a {
 	text-decoration: none;
 	/*padding: 33px 20px 32px 20px;*/
-	margin: 0 20px;
+	margin: 5px 20px;
 
 	text-transform: uppercase;
 	color: #000000;
@@ -442,18 +485,38 @@ header {
 }
 
 .stage-3-content {
-	width: 1249px;
+	max-width: 1249px;
+	/*width: 100%;*/
 
-	margin-top: 60px;
+	margin-top: 54px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	/*align-content: space-between;*/
 }
 
+.stage-3-content img {
+	/*min-width: 200px;*/
+	/*height: 293px;*/
+	/*min-height: auto;*/
+
+	/*margin-right: 10px;*/
+	margin-bottom: 15px;
+	/*flex: 1 1 300px;*/
+	/*flex: 1 1 24%;*/
+	/*width: 24%;*/
+	object-fit: cover;
+}
 
 
 /*===================================================*/
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1270px) {
 	.stage-1-base, 
-	.stage-2-base {
+	.stage-2-base,
+	.stage-3-base {
 		padding-left: 1vw;
 		padding-right: 1vw;
 	}
@@ -462,9 +525,21 @@ header {
 		font-size: 5vw;
 	}
 
-	.stage-2-left-block h2 {
+	.stage-2-left-block h2,
+	.stage-3-heading h2 {
 		font-size: 4vw;
-	}	
+	}
+
+	.stage-3-content {
+		/* для компенсации margin-right у img */
+		margin-left: 10px; 
+	}
+
+	.stage-3-content img {
+		flex: 1 1 300px;
+		/*flex: 1 1 24%;*/
+		margin-right: 10px;
+	}
 }
 
 @media screen and (max-width: 670px) {
@@ -488,12 +563,21 @@ header {
 		width: 100%;
 	}
 
-	.stage-2-left-block h2 {
+	.stage-2-left-block h2,
+	.stage-3-heading h2 {
 		font-size: 7vw;
 	}
 
 	.stage-2-right-block .item {
 		flex: 1 1 220px;
+	}
+
+	.stage-3-content {
+		margin-left: 0; 
+	}
+
+	.stage-3-content img {
+		width: 100%;
 	}	
 }
 
