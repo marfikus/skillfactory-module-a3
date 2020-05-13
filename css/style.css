@@ -767,6 +767,7 @@ header {
 		min-width: 200px;
 		max-width: 324px;
 		height: auto;
+		max-height: 460px;
 	}
 
 	.selected-persone-info {
