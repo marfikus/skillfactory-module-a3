@@ -598,31 +598,18 @@ header {
 .stage-4-content {
 	/*background-color: #2E8580;*/
 	margin-top: 69px;
-	min-height: 460px;
+	/*min-height: 460px;*/
 
 	display: flex;
-	justify-content: space-between;
+	/*justify-content: flex-start;*/
 	/*align-items: flex-start;*/
 	flex-wrap: wrap;
-}
 
-.stage-4-left-block {
-	/*background-color: #5E3580;*/
-
-	width: 30%;
-	/*width: 324px;*/
-	height: 460px;
+	position: relative;
 }
 
 .selected-persone-foto {
 	/*background-color: #D03636;*/
-}
-
-.stage-4-right-block {
-	/*background-color: #223199;*/
-
-	/*width: 70%;*/
-	/*width: 900px;*/
 }
 
 .selected-persone-info {
@@ -630,7 +617,9 @@ header {
 
 	/*width: 74%;*/
 	/*max-width: 663px;*/
-	height: 200px;
+	/*height: 200px;*/
+
+	margin-left: 72px;
 }
 
 .selected-persone-info h3 {
@@ -678,12 +667,16 @@ header {
 .all-persones {
 	/*background-color: #D97373;*/
 
+	position: absolute;
+	left: 397px;
+	top: 244px;
+
 	/*width: 74%;*/
 	/*width: */
-	height: 217px;
+	/*height: 217px;*/
 
 	display: flex;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 	flex-wrap: wrap;
 }
 
@@ -692,6 +685,8 @@ header {
 
 	width: 199px;
 	height: 217px;
+
+	margin-right: 14px;
 
 	position: relative;
 }
@@ -734,7 +729,8 @@ header {
 @media screen and (max-width: 1270px) {
 	.stage-1-base, 
 	.stage-2-base,
-	.stage-3-base {
+	.stage-3-base,
+	.stage-4-base {
 		padding-left: 1vw;
 		padding-right: 1vw;
 	}
@@ -744,7 +740,8 @@ header {
 	}
 
 	.stage-2-left-block h2,
-	.stage-3-heading h2 {
+	.stage-3-heading h2,
+	.stage-4-heading h2 {
 		font-size: 4vw;
 	}
 
@@ -757,6 +754,33 @@ header {
 		flex: 1 1 300px;
 		/*flex: 1 1 24%;*/
 		margin-right: 10px;
+	}
+
+	.stage-4-content {
+		flex-wrap: wrap;
+	}
+
+	.selected-persone-foto {
+		/*width: 90%;*/
+		flex: 1 1;
+
+		min-width: 200px;
+		max-width: 324px;
+		height: auto;
+	}
+
+	.selected-persone-info {
+		margin-left: 20px;
+		flex: 1 1 200px;
+	}
+
+	.all-persones {
+		position: static;
+		margin-top: 30px;
+	}
+
+	.all-persones .item {
+		margin-bottom: 14px;
 	}
 }
 
@@ -782,7 +806,8 @@ header {
 	}
 
 	.stage-2-left-block h2,
-	.stage-3-heading h2 {
+	.stage-3-heading h2,
+	.stage-4-heading h2 {
 		font-size: 7vw;
 	}
 
@@ -796,6 +821,23 @@ header {
 
 	.stage-3-content img {
 		width: 100%;
-	}	
+	}
+
+	.stage-4-content {
+		/*justify-content: center;*/
+	}
+
+	.selected-persone-foto {
+		width: 100%;
+	}
+
+	.selected-persone-info {
+		margin-left: 0;
+		flex: 1 1 500px;
+	}
+
+	.selected-persone-info h3 {
+		font-size: 6vw;
+	}
 }
 
