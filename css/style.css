@@ -801,7 +801,7 @@ header {
 	/*flex-wrap: wrap;*/
 }
 
-.email-input {
+.subscribe-form .email-input {
 	/*height: 78px;*/
 	/*width: 524px;*/
 	max-width: 524px;
@@ -885,7 +885,11 @@ header {
 	/*margin-bottom: 59px;*/
 
 	/*Выравнивание флексом:*/
-	/*display: flex;*/
+/*	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	align-content: space-between;*/
 	/*flex-direction: column;*/
 	/*align-items: center;*/
 
@@ -913,7 +917,7 @@ header {
 }
 
 .stage-6-heading p {
-	max-width: 480px;
+	max-width: 752px;
 
 	color: #000000;
 	font-family: 'OpenSans-Regular', sans-serif;
@@ -945,12 +949,134 @@ header {
 	justify-content: space-between;
 	align-items: flex-start;
 	flex-wrap: wrap;
+	/*align-content: space-between;*/
 }
 
-.stage-6-form {
-	background-color: green;
-	width: 734px;
+.send-message-form {
+	/*background-color: green;*/
+	max-width: 734px;
 	min-height: 485px;
+
+	display: flex;
+	/*flex-direction: column;*/
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: space-between;
+}
+
+.send-message-form .username-input {
+	/*height: 78px;*/
+	/*width: 524px;*/
+	width: 240px;
+	/*min-width: 200px;*/
+	/*flex: 1 1 400px;*/
+
+	padding: 25px 50px 25px 50px;
+
+	border: 0;
+	border-radius: 5px;
+
+	/*background-color: #000000;*/
+	background-color: #E5E5E5;
+	/*mix-blend-mode: normal;*/
+	/*opacity: 0.1;*/
+
+	color: #000000;
+	font-family: 'OpenSans-Regular', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+	/*letter-spacing: 0.4px;*/
+}
+
+.send-message-form .email-input {
+	/*height: 78px;*/
+	/*width: 524px;*/
+	width: 240px;
+	/*min-width: 200px;*/
+	/*flex: 1 1 400px;*/
+
+	padding: 25px 50px 25px 50px;
+
+	border: 0;
+	border-radius: 5px;
+
+	/*background-color: #000000;*/
+	background-color: #E5E5E5;
+	/*mix-blend-mode: normal;*/
+	/*opacity: 0.1;*/
+
+	color: #000000;
+	font-family: 'OpenSans-Regular', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+	/*letter-spacing: 0.4px;*/
+}
+
+.send-message-form .message-input {
+	/*height: 78px;*/
+	/*width: 524px;*/
+	/*max-width: 342px;*/
+	/*min-width: 200px;*/
+	width: 100%;
+	/*flex: 1 1 400px;*/
+
+	padding: 28px 0 28px 38px;
+
+	border: 0;
+	border-radius: 5px;
+
+	/*background-color: #000000;*/
+	background-color: #E5E5E5;
+	/*mix-blend-mode: normal;*/
+	/*opacity: 0.1;*/
+
+	color: #000000;
+	font-family: 'OpenSans-Regular', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+	/*letter-spacing: 0.4px;*/
+}
+
+/*цвет у placeholder так просто не меняется*/
+.inputs::placeholder {
+	color: #000000;
+}
+
+.send-message-button {
+	/*display: inline-block;*/
+	/*width: 217px;*/
+	width: 100%;
+	/*max-width: 217px;*/
+	/*min-width: 180px;*/
+	/*flex: 1 1;*/
+
+	/*position: relative;*/
+	/*left: 110px;*/
+	
+	/*margin-left: 19px;*/
+	padding: 24px 0 24px 0;
+	/*text-decoration: none;*/
+	background-color: #FF2D2D;
+	text-align: center;
+	border: 0;
+	border-radius: 5px;
+	/*align-items: center;*/
+
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-family: 'OpenSans-Bold', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 34px;	
+	letter-spacing: 0.3195px;
 }
 
 .stage-6-contacts {
@@ -987,7 +1113,7 @@ header {
 }
 
 /*фальш-поле справа на большой ширине*/
-.stage-6-contacts-add {
+.contacts-after {
 	background-color: #2D2D2D;
 	width: calc((100vw - 1249px) / 2);
 	height: 485px;
@@ -999,7 +1125,7 @@ header {
 
 /*фальш-поле слева когда блок перескочил вниз
 (можно и без этого, так, по приколу сделал)*/
-.stage-6-contacts-add-2-left {
+.contacts-wrapped-before {
 	display: none;
 
 	background-color: #2D2D2D;
@@ -1012,7 +1138,7 @@ header {
 }
 
 /*фальш-поле справа когда блок перескочил вниз*/
-.stage-6-contacts-add-2-right {
+.contacts-wrapped-after {
 	display: none;
 
 	background-color: #2D2D2D;
@@ -1119,7 +1245,7 @@ header {
 		/*position: relative;*/
 	}
 
-	.stage-6-form {
+	.send-message-form {
 		width: 100%;
 		margin-bottom: 20px;		
 	}
@@ -1130,12 +1256,12 @@ header {
 		width: 100%;
 	}
 
-	.stage-6-contacts-add {
+	.contacts-after {
 		display: none;
 	}
 
-	.stage-6-contacts-add-2-left,
-	.stage-6-contacts-add-2-right {
+	.contacts-wrapped-before,
+	.contacts-wrapped-after {
 		display: block;
 	}
 }
