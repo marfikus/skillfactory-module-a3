@@ -851,6 +851,193 @@ header {
 	letter-spacing: 0.3195px;
 }
 
+/*===================================================*/
+
+.stage-6 {
+	min-height: 300px;
+
+	/*Выравнивание флексом:*/
+	display: flex;
+	justify-content: center;
+
+	/*width: 1249px;*/
+
+	/*margin-top: 92px;*/
+
+	/*Выравнивание флексом:*/
+/*	display: flex;
+	flex-direction: column;
+	align-items: center;*/
+
+	position: relative;
+}
+
+.stage-6-base {
+	/*Если выравнивание без флекса:*/
+	/*margin: 0 auto;*/
+	/*max-width: 1249px;*/
+	/*position: relative;*/
+	/*top: 107px;*/
+
+	/*Если выравнивание флексом:*/
+	width: 1249px;
+	margin-top: 111px;
+	/*margin-bottom: 59px;*/
+
+	/*Выравнивание флексом:*/
+	/*display: flex;*/
+	/*flex-direction: column;*/
+	/*align-items: center;*/
+
+	/*position: relative;*/
+}
+
+.stage-6-heading {
+	/*background-color: gray;*/
+	/*width: */
+	min-height: 200px;
+}
+
+.stage-6-heading h2 {
+	margin: 0;
+
+	text-transform: uppercase;
+	color: #000000;
+	font-family: 'OpenSans-Bold', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 55px;
+	letter-spacing: 0.38px;
+	word-break: break-word;
+}
+
+.stage-6-heading p {
+	max-width: 480px;
+
+	color: #000000;
+	font-family: 'OpenSans-Regular', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+
+	/*margin-left: 27px;*/
+	margin-top: 19px;
+	margin-bottom: 31px;
+}
+
+.stage-6-heading hr {
+	width: 134px;
+	height: 2px;
+	background-color: #FF2D2D;
+
+	/*margin-left: 27px;*/
+	/*margin-right: 0;*/
+	margin: 0;
+}
+
+.stage-6-content {
+	margin-top: 80px;
+	height: 485px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.stage-6-form {
+	background-color: green;
+	width: 734px;
+	min-height: 485px;
+}
+
+.stage-6-contacts {
+	padding: 141px 13px 141px 81px;
+
+	background-color: #2D2D2D;
+	width: 315px;
+	height: 203px;
+
+/*	position: absolute;
+	right: 0;
+	bottom: 0;*/
+}
+
+.stage-6-contacts h3 {
+	color: #FFFFFF;
+	font-family: 'OpenSans-Bold', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	/*line-height: 0px;*/
+	letter-spacing: 0.32px;	
+	text-transform: uppercase;
+}
+
+.stage-6-contacts p {
+	color: #FFFFFF;
+	font-family: 'OpenSans-Regular', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+	word-break: break-word;
+}
+
+/*фальш-поле справа на большой ширине*/
+.stage-6-contacts-add {
+	background-color: #2D2D2D;
+	width: calc((100vw - 1249px) / 2);
+	height: 485px;
+
+	position: absolute;
+	right: 0;
+	bottom: 0;	
+}
+
+/*фальш-поле слева когда блок перескочил вниз
+(можно и без этого, так, по приколу сделал)*/
+.stage-6-contacts-add-2-left {
+	display: none;
+
+	background-color: #2D2D2D;
+	width: 1vw;
+	height: 485px;
+
+	position: absolute;
+	left: 0;
+	bottom: -505px;	
+}
+
+/*фальш-поле справа когда блок перескочил вниз*/
+.stage-6-contacts-add-2-right {
+	display: none;
+
+	background-color: #2D2D2D;
+	width: 1vw;
+	height: 485px;
+
+	position: absolute;
+	right: 0;
+	bottom: -505px;
+}
+
+
+
+/*.stage-6-contacts::after {
+	content: '';
+	background-color: blue;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translateX(100%);
+	width: 100%;
+	height: 200px;
+}*/
+
+
 
 /*===================================================*/
 
@@ -862,6 +1049,11 @@ header {
  	.stage-5 {
 		padding-left: 1vw;
 		padding-right: 1vw;
+	}
+
+ 	.stage-6-base {
+		padding-left: 1vw;
+		/*чтобы у stage-6-contacts не пропадал эффект прикрепления к правому краю экрана*/
 	}
 
 	.stage-1-left-block h1 {
@@ -885,6 +1077,10 @@ header {
 		/*flex: 1 1 24%;*/
 		margin-right: 10px;
 	}
+
+	.stage-4 {
+		margin-bottom: 70px;
+	}	
 
 	.stage-4-content {
 		flex-wrap: wrap;
@@ -912,6 +1108,35 @@ header {
 
 	.all-persones .item {
 		margin-bottom: 14px;
+	}
+}
+
+@media screen and (max-width: 1154px) {
+ 	.stage-6-base {
+		padding-left: 1vw;
+		padding-right: 1vw;
+
+		/*position: relative;*/
+	}
+
+	.stage-6-form {
+		width: 100%;
+		margin-bottom: 20px;		
+	}
+
+	.stage-6-contacts {
+		/*position: absolute;*/
+
+		width: 100%;
+	}
+
+	.stage-6-contacts-add {
+		display: none;
+	}
+
+	.stage-6-contacts-add-2-left,
+	.stage-6-contacts-add-2-right {
+		display: block;
 	}
 }
 
