@@ -1131,12 +1131,66 @@ header {
 
 /*===================================================*/
 
+.footer-wrapper {
+	background-color: #313030;
+	min-height: 113px;
+
+	margin-top: 106px;
+
+	display: flex;
+	justify-content: center;
+}
+
+footer {
+	/*Если выравнивание без флекса:*/
+	/*max-width: 1249px;*/
+	/*margin: 0 auto;*/
+	/*position: relative;*/
+	/*top: 29px;*/
+
+	/*Если выравнивание флексом:*/
+	width: 1249px;
+	/*margin-top: 29px;*/
+
+	/*min-height: 89px;*/
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+
+	/*background-color: #000000;*/
+	/*opacity: 0.8;*/
+}
+
+.copyright p {
+	color: #B8B8B8;
+	font-family: 'OpenSans-Regular', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	word-break: break-word;
+}
+
+footer .icons {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+footer .icons a {
+	margin-left: 18px;
+}
+
+/*===================================================*/
+
 @media screen and (max-width: 1270px) {
 	.stage-1-base, 
 	.stage-2-base,
 	.stage-3-base,
 	.stage-4-base,
- 	.stage-5 {
+ 	.stage-5,
+ 	footer {
 		padding-left: 1vw;
 		padding-right: 1vw;
 	}
