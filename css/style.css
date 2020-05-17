@@ -801,14 +801,15 @@ header {
 	/*flex-wrap: wrap;*/
 }
 
-.email-input {
+.subscribe-form .email-input {
 	/*height: 78px;*/
 	/*width: 524px;*/
-	max-width: 524px;
+	/*max-width: 524px;*/
+	max-width: 453px;
 	min-width: 200px;
 	flex: 1 1 400px;
 
-	padding: 28px 0 28px 38px;
+	padding: 28px 38px 28px 38px;
 
 	border: 0;
 	border-radius: 5px;
@@ -851,6 +852,282 @@ header {
 	letter-spacing: 0.3195px;
 }
 
+/*===================================================*/
+
+.stage-6 {
+	min-height: 300px;
+
+	/*Выравнивание флексом:*/
+	display: flex;
+	justify-content: center;
+
+	/*width: 1249px;*/
+
+	/*margin-top: 92px;*/
+
+	/*Выравнивание флексом:*/
+/*	display: flex;
+	flex-direction: column;
+	align-items: center;*/
+
+	position: relative;
+}
+
+.stage-6-base {
+	/*Если выравнивание без флекса:*/
+	/*margin: 0 auto;*/
+	/*max-width: 1249px;*/
+	/*position: relative;*/
+	/*top: 107px;*/
+
+	/*Если выравнивание флексом:*/
+	width: 1249px;
+	margin-top: 91px;
+	/*margin-bottom: 59px;*/
+
+	/*Выравнивание флексом:*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: space-between;
+	/*flex-direction: column;*/
+	/*align-items: center;*/
+
+	/*position: relative;*/
+}
+
+.stage-6-heading {
+	/*background-color: gray;*/
+	width: 100%;
+	min-height: 200px;
+
+	margin-bottom: 74px;
+}
+
+.stage-6-heading h2 {
+	margin: 0;
+
+	text-transform: uppercase;
+	color: #000000;
+	font-family: 'OpenSans-Bold', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 55px;
+	letter-spacing: 0.38px;
+	word-break: break-word;
+}
+
+.stage-6-heading p {
+	max-width: 752px;
+
+	color: #000000;
+	font-family: 'OpenSans-Regular', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+
+	/*margin-left: 27px;*/
+	margin-top: 30px;
+	margin-bottom: 52px;
+}
+
+.stage-6-heading hr {
+	width: 134px;
+	height: 2px;
+	background-color: #FF2D2D;
+
+	/*margin-left: 27px;*/
+	/*margin-right: 0;*/
+	margin: 0;
+}
+
+.stage-6-content {
+	margin-top: 80px;
+	min-height: 485px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	/*align-content: space-between;*/
+}
+
+.send-message-form {
+	/*background-color: green;*/
+	max-width: 734px;
+	min-height: 485px;
+
+	margin-right: 10px;
+
+	display: flex;
+	/*flex-direction: column;*/
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: space-between;
+}
+
+.send-message-form .username-input {
+	/*height: 78px;*/
+	/*width: 524px;*/
+	/*width: 240px;*/
+	width: 33%;
+	/*min-width: 200px;*/
+	/*flex: 0 1 45%;*/
+	/*flex-shrink: 1;*/
+
+	padding: 22px 50px 22px 50px;
+	margin-right: 10px;
+}
+
+.send-message-form .email-input {
+	/*height: 78px;*/
+	/*width: 524px;*/
+	/*width: 240px;*/
+	width: 33%;
+	/*min-width: 200px;*/
+	/*flex: 0 1 45%;*/
+	/*flex-shrink: 1;*/
+
+	padding: 22px 50px 22px 50px;
+}
+
+.send-message-form .message-input {
+	height: 195px;
+	/*width: 524px;*/
+	/*max-width: 342px;*/
+	/*min-width: 200px;*/
+	width: 100%;
+	/*flex: 1 1 400px;*/
+
+	padding: 28px 38px 28px 38px;
+
+	resize: none;
+}
+
+.send-message-form .inputs {
+	border: 0;
+	border-radius: 5px;	
+
+	/*background-color: #000000;*/
+	background-color: #E5E5E5;
+	/*mix-blend-mode: normal;*/
+	/*opacity: 0.1;*/	
+
+	color: #000000;
+	font-family: 'OpenSans-Regular', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+	/*letter-spacing: 0.4px;*/
+}
+
+/*цвет у placeholder так просто не меняется*/
+.send-message-form .inputs::placeholder {
+	color: #000000;
+}
+
+.send-message-button {
+	/*display: inline-block;*/
+	/*width: 217px;*/
+	width: 100%;
+	/*max-width: 217px;*/
+	/*min-width: 180px;*/
+	/*flex: 1 1;*/
+	
+	/*margin-left: 19px;*/
+	padding: 21px 0 19px 0;
+	/*text-decoration: none;*/
+	background-color: #FF2D2D;
+	text-align: center;
+	border: 0;
+	border-radius: 5px;
+	/*align-items: center;*/
+
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-family: 'OpenSans-Bold', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 34px;	
+	letter-spacing: 0.3195px;
+}
+
+.stage-6-contacts {
+	padding: 141px 13px 141px 81px;
+
+	background-color: #2D2D2D;
+	width: 315px;
+	height: 203px;
+
+/*	position: absolute;
+	right: 0;
+	bottom: 0;*/
+}
+
+.stage-6-contacts h3 {
+	color: #FFFFFF;
+	font-family: 'OpenSans-Bold', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	/*line-height: 0px;*/
+	letter-spacing: 0.32px;	
+	text-transform: uppercase;
+}
+
+.stage-6-contacts p {
+	color: #FFFFFF;
+	font-family: 'OpenSans-Regular', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+	word-break: break-word;
+}
+
+/*фальш-поле справа на большой ширине*/
+.contacts-after {
+	background-color: #2D2D2D;
+	width: calc((100vw - 1249px) / 2);
+	height: 485px;
+
+	position: absolute;
+	right: 0;
+	bottom: 0;	
+}
+
+/*фальш-поле слева когда блок перескочил вниз
+(можно и без этого, так, по приколу сделал)*/
+.contacts-wrapped-before {
+	display: none;
+
+	background-color: #2D2D2D;
+	width: 1vw;
+	height: 485px;
+
+	position: absolute;
+	left: 0;
+	bottom: 0;	
+}
+
+/*фальш-поле справа когда блок перескочил вниз*/
+.contacts-wrapped-after {
+	display: none;
+
+	background-color: #2D2D2D;
+	width: 1vw;
+	height: 485px;
+
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
 
 /*===================================================*/
 
@@ -864,6 +1141,11 @@ header {
 		padding-right: 1vw;
 	}
 
+ 	.stage-6-base {
+		padding-left: 1vw;
+		/*чтобы у stage-6-contacts не пропадал эффект прикрепления к правому краю экрана*/
+	}
+
 	.stage-1-left-block h1 {
 		font-size: 5vw;
 	}
@@ -871,7 +1153,8 @@ header {
 	.stage-2-left-block h2,
 	.stage-3-heading h2,
 	.stage-4-heading h2,
-	.stage-5 h2 {
+	.stage-5 h2,
+	.stage-6-heading h2 {
 		font-size: 4vw;
 	}
 
@@ -885,6 +1168,10 @@ header {
 		/*flex: 1 1 24%;*/
 		margin-right: 10px;
 	}
+
+	.stage-4 {
+		margin-bottom: 70px;
+	}	
 
 	.stage-4-content {
 		flex-wrap: wrap;
@@ -915,6 +1202,47 @@ header {
 	}
 }
 
+@media screen and (max-width: 1164px) {
+ 	.stage-6-base {
+		padding-left: 1vw;
+		padding-right: 1vw;
+
+		/*position: relative;*/
+
+		justify-content: center;
+	}
+
+	.stage-6-heading {
+		/*display: flex;*/
+		/*flex-direction: column;*/
+		/*justify-content: center;*/
+
+		/*text-align: center;*/
+		width: auto;
+	}
+
+	.send-message-form {
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 0;	
+	}
+
+	.stage-6-contacts {
+		/*position: absolute;*/
+
+		width: 100%;
+	}
+
+	.contacts-after {
+		display: none;
+	}
+
+	.contacts-wrapped-before,
+	.contacts-wrapped-after {
+		display: block;
+	}
+}
+
 @media screen and (max-width: 670px) {
 	.stage-1-base,
 	.stage-2-base {
@@ -939,7 +1267,8 @@ header {
 	.stage-2-left-block h2,
 	.stage-3-heading h2,
 	.stage-4-heading h2,
-	.stage-5 h2 {
+	.stage-5 h2,
+	.stage-6-heading h2 {
 		font-size: 7vw;
 	}
 
@@ -977,7 +1306,7 @@ header {
 		flex-wrap: wrap;
 	}
 
-	.email-input {
+	.subscribe-form .email-input {
 		width: 100%;
 		margin-bottom: 15px;
 		/*min-width: 200px;*/
@@ -988,6 +1317,14 @@ header {
 		/*width: 50%;*/
 		margin-left: 0;
 		margin-bottom: 15px;
+	}
+
+	.send-message-form .username-input,
+	.send-message-form .email-input,
+	.send-message-form .message-input {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
 	}
 }
 
