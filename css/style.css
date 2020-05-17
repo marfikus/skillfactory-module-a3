@@ -943,7 +943,7 @@ header {
 
 .stage-6-content {
 	margin-top: 80px;
-	height: 485px;
+	min-height: 485px;
 
 	display: flex;
 	justify-content: space-between;
@@ -968,7 +968,7 @@ header {
 .send-message-form .username-input {
 	/*height: 78px;*/
 	/*width: 524px;*/
-	width: 240px;
+	min-width: 240px;
 	/*min-width: 200px;*/
 	/*flex: 1 1 400px;*/
 
@@ -994,7 +994,7 @@ header {
 .send-message-form .email-input {
 	/*height: 78px;*/
 	/*width: 524px;*/
-	width: 240px;
+	min-width: 240px;
 	/*min-width: 200px;*/
 	/*flex: 1 1 400px;*/
 
@@ -1018,7 +1018,7 @@ header {
 }
 
 .send-message-form .message-input {
-	/*height: 78px;*/
+	height: 195px;
 	/*width: 524px;*/
 	/*max-width: 342px;*/
 	/*min-width: 200px;*/
@@ -1029,6 +1029,7 @@ header {
 
 	border: 0;
 	border-radius: 5px;
+	resize: none;
 
 	/*background-color: #000000;*/
 	background-color: #E5E5E5;
@@ -1189,7 +1190,8 @@ header {
 	.stage-2-left-block h2,
 	.stage-3-heading h2,
 	.stage-4-heading h2,
-	.stage-5 h2 {
+	.stage-5 h2,
+	.stage-6-heading h2 {
 		font-size: 4vw;
 	}
 
@@ -1290,7 +1292,8 @@ header {
 	.stage-2-left-block h2,
 	.stage-3-heading h2,
 	.stage-4-heading h2,
-	.stage-5 h2 {
+	.stage-5 h2,
+	.stage-6-heading h2 {
 		font-size: 7vw;
 	}
 
