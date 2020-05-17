@@ -960,6 +960,8 @@ header {
 	max-width: 734px;
 	min-height: 485px;
 
+	margin-right: 10px;
+
 	display: flex;
 	/*flex-direction: column;*/
 	flex-wrap: wrap;
@@ -1247,7 +1249,7 @@ header {
 	}
 }
 
-@media screen and (max-width: 1154px) {
+@media screen and (max-width: 1164px) {
  	.stage-6-base {
 		padding-left: 1vw;
 		padding-right: 1vw;
@@ -1268,7 +1270,8 @@ header {
 
 	.send-message-form {
 		width: 100%;
-		margin-bottom: 20px;		
+		margin-bottom: 20px;
+		margin-right: 0;	
 	}
 
 	.stage-6-contacts {
@@ -1369,10 +1372,6 @@ header {
 		width: 100%;
 		margin-right: 0;
 		margin-bottom: 30px;
-	}
-
-	.send-message-form .message-input {
-		/*margin-bottom: 30px*/
 	}
 }
 
