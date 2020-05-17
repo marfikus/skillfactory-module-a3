@@ -1157,6 +1157,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 
 	/*background-color: #000000;*/
 	/*opacity: 0.8;*/
@@ -1172,7 +1173,14 @@ footer {
 	word-break: break-word;
 }
 
+footer .icons {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
 
+footer .icons a {
+	margin-left: 18px;
+}
 
 /*===================================================*/
 
@@ -1181,7 +1189,8 @@ footer {
 	.stage-2-base,
 	.stage-3-base,
 	.stage-4-base,
- 	.stage-5 {
+ 	.stage-5,
+ 	footer {
 		padding-left: 1vw;
 		padding-right: 1vw;
 	}
