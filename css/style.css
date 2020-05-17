@@ -804,11 +804,12 @@ header {
 .subscribe-form .email-input {
 	/*height: 78px;*/
 	/*width: 524px;*/
-	max-width: 524px;
+	/*max-width: 524px;*/
+	max-width: 453px;
 	min-width: 200px;
 	flex: 1 1 400px;
 
-	padding: 28px 0 28px 38px;
+	padding: 28px 38px 28px 38px;
 
 	border: 0;
 	border-radius: 5px;
@@ -881,15 +882,15 @@ header {
 
 	/*Если выравнивание флексом:*/
 	width: 1249px;
-	margin-top: 111px;
+	margin-top: 91px;
 	/*margin-bottom: 59px;*/
 
 	/*Выравнивание флексом:*/
-/*	display: flex;
+	display: flex;
 	flex-wrap: wrap;
-	align-items: flex-start;
 	justify-content: space-between;
-	align-content: space-between;*/
+	align-items: flex-start;
+	align-content: space-between;
 	/*flex-direction: column;*/
 	/*align-items: center;*/
 
@@ -898,8 +899,10 @@ header {
 
 .stage-6-heading {
 	/*background-color: gray;*/
-	/*width: */
+	width: 100%;
 	min-height: 200px;
+
+	margin-bottom: 74px;
 }
 
 .stage-6-heading h2 {
@@ -927,8 +930,8 @@ header {
 	line-height: 28px;
 
 	/*margin-left: 27px;*/
-	margin-top: 19px;
-	margin-bottom: 31px;
+	margin-top: 30px;
+	margin-bottom: 52px;
 }
 
 .stage-6-heading hr {
@@ -968,11 +971,14 @@ header {
 .send-message-form .username-input {
 	/*height: 78px;*/
 	/*width: 524px;*/
-	min-width: 240px;
+	/*width: 240px;*/
+	width: 33%;
 	/*min-width: 200px;*/
-	/*flex: 1 1 400px;*/
+	/*flex: 0 1 45%;*/
+	/*flex-shrink: 1;*/
 
-	padding: 25px 50px 25px 50px;
+	padding: 22px 50px 22px 50px;
+	margin-right: 10px;
 
 	border: 0;
 	border-radius: 5px;
@@ -994,11 +1000,13 @@ header {
 .send-message-form .email-input {
 	/*height: 78px;*/
 	/*width: 524px;*/
-	min-width: 240px;
+	/*width: 240px;*/
+	width: 33%;
 	/*min-width: 200px;*/
-	/*flex: 1 1 400px;*/
+	/*flex: 0 1 45%;*/
+	/*flex-shrink: 1;*/
 
-	padding: 25px 50px 25px 50px;
+	padding: 22px 50px 22px 50px;
 
 	border: 0;
 	border-radius: 5px;
@@ -1025,7 +1033,7 @@ header {
 	width: 100%;
 	/*flex: 1 1 400px;*/
 
-	padding: 28px 0 28px 38px;
+	padding: 28px 38px 28px 38px;
 
 	border: 0;
 	border-radius: 5px;
@@ -1062,7 +1070,7 @@ header {
 	/*left: 110px;*/
 	
 	/*margin-left: 19px;*/
-	padding: 24px 0 24px 0;
+	padding: 21px 0 19px 0;
 	/*text-decoration: none;*/
 	background-color: #FF2D2D;
 	text-align: center;
@@ -1245,6 +1253,17 @@ header {
 		padding-right: 1vw;
 
 		/*position: relative;*/
+
+		justify-content: center;
+	}
+
+	.stage-6-heading {
+		/*display: flex;*/
+		/*flex-direction: column;*/
+		/*justify-content: center;*/
+
+		/*text-align: center;*/
+		width: auto;
 	}
 
 	.send-message-form {
@@ -1331,7 +1350,7 @@ header {
 		flex-wrap: wrap;
 	}
 
-	.email-input {
+	.subscribe-form .email-input {
 		width: 100%;
 		margin-bottom: 15px;
 		/*min-width: 200px;*/
@@ -1342,6 +1361,18 @@ header {
 		/*width: 50%;*/
 		margin-left: 0;
 		margin-bottom: 15px;
+	}
+
+	.send-message-form .username-input,
+	.send-message-form .email-input,
+	.send-message-form .message-input {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+
+	.send-message-form .message-input {
+		/*margin-bottom: 30px*/
 	}
 }
 
